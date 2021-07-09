@@ -1,0 +1,23 @@
+# Summary
+This experiment perform the comparison between a Jacobian matrix and its quantized approximation, in a transpose-vector product context. The experiment is perform in Python and requires numpy and scipy.
+
+## Instructions
+The file 'script.sh' is an execution script. It copy the required Python files and then performs the required experiment. It defines three parameters:
+* M: The number of "equations" or the number of rows in the Jacobian matrix.
+* N: The number of "unknowns" or number of columns in the Jacobian matrix.
+* PROBLEM: The problem to test.
+* NLAYERS: Number of layers for the quantized matrix
+* BITS: Number of bits for each layer.
+
+By default, the previous parameters are defined for the Dense I problem, and four layers of 2 bits. The available problems are: 
+* dense1
+* dense2
+* sparse1
+* sparse2
+* uniform
+* normal
+
+Some functions has specific requirements for problem size. Also, as a requirement for the quantized approximation, the value of N must be a multiple of 8. In the thesis experiment, the number of layers is 4 for all the experiments, and the number of bits were 2, 4, 6 and 8. For each problem, the sizes were:
+* dense1, dense2, norma, uniform: M = 80000 and N = 50000
+* sparse1: M = 155982 and N = 26000
+* sparse2: M = N = 63000
