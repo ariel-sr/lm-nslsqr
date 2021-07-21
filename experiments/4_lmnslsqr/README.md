@@ -18,4 +18,10 @@ The code expect that the code to be in a folder called 'lmnslsqr'. First, copy t
 
 For example, to solve Dense I problem for 80000 equations and 50000 unknowns, using two layers of 3 bits and one layer of 2 bits is given by:
 
-./exp3 80000 50000 3 3 3 2 4
+./exp4 80000 50000 3 3 3 2 4
+
+The folder contains a script called "execute_test.sh" that will execute lm-nsLSQR with different problems, depending on the parameter given to the script. The test will obtain the results of section 7.7 of the Master degree thesis. For example, to execute the test for the Sparse II problem, the script must be executed as follows:
+
+bash execute_test.sh sparse2
+
+The script must be executed after the compilation of the code in the folder. To compile the code, follow the instructiones previously given in this README.
