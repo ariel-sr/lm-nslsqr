@@ -28,4 +28,4 @@ The repository contains several folders. The explanation of each folder is given
 The folder 'experiment' contains code to perform the thesis experiment. Inside of each folder there is a README containing an explanation of the experiment and the instruction for execution.
 
 # Contact
-If you have some question, comment and you want to contact me, please mail me to ariel.sanhuezar@usm.cl
+If you have some question, comment and you want to contact me, please mail me to ariel.osr@gmail.cl
